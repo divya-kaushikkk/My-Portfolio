@@ -1,0 +1,91 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Assistant, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    box-sizing: content-box;
+}
+body{
+    height: 100%;
+    width: 100%;
+}
+header{
+    min-width: 100%;
+    height: 100px;
+    background-color: #ffffff;
+    display: flex;
+    box-shadow: 0 2px 5px rgba(11, 11, 11, 0.1);
+}
+.header_section{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+
+}
+.header_section img{
+    width: 150px;
+    height: 150px;
+    /* margin-right: 800PX; */
+}
+.header_section a{
+    text-decoration: none;
+    color: black;
+    font-size: 30px;
+    font-weight: 400px;
+}
+
+/* main ka code */
+
+.home_section{
+    font-weight: 400;
+    font-size: 45px;
+    margin: 40px 0px 30px 60px;
+}
+ p{
+    font-weight: 500;
+    font-size: 20px;
+    margin: 30px 0px 0px 150px;
+}
+hr{
+    width: 95%;
+    margin: 20px auto;
+    border: 0;
+    height: 1px;
+    background-color: #e0e0e0;
+}
+.skills_section{
+    font-weight: 500;
+    font-size: 25px;
+    margin: 40px 0px 30px 90px;
+}
+.myntra_clone a{
+    margin-left: 10px;
+    font-size: 20px;
+    text-decoration: none;
+}
+.contact_text{
+    margin-left: 70px;
+}
+.contact p a{
+    text-decoration: none;
+    color: black;
+}
+main{
+    margin-bottom: 100px;
+}
+.footer_section{
+    width: 100%;
+    height: 200px;
+    background-color: #fAfBfC;
+    align-items: center;
+    justify-content: center;
+}
+.footer_section p{
+    font-size: 20px;
+    font-weight: 300;
+    margin: 10px 0px 0px 30px;
+}
+.footer_section p a{
+    text-decoration: none;
+    color: black;
+    margin-left: 100px;
+} 
