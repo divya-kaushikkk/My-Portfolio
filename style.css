@@ -2,39 +2,50 @@
     margin: 0px;
     padding: 0px;
     font-family: Assistant, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
-    box-sizing: content-box;
-}
-body{
-    height: 100%;
-    width: 100%;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
 }
 header{
-    min-width: 100%;
-    height: 100px;
-    background-color: #ffffff;
-    display: flex;
-    box-shadow: 0 2px 5px rgba(11, 11, 11, 0.1);
+    height: 80px;
+    width: 100%;
 }
-.header_section{
-    display: flex;
-    align-items: center;
-    gap: 50px;
-
+.header_section ul{
+    float: right;
+    color: black;
+    margin-right: 20px;
 }
-.header_section img{
-    width: 150px;
-    height: 150px;
-    /* margin-right: 800PX; */
+.header_section ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0px 5px;
 }
 .header_section a{
-    text-decoration: none;
-    color: black;
     font-size: 30px;
-    font-weight: 400px;
+    font-weight: 500;
+    color: black;
+    text-transform: uppercase;
 }
-
+.header_section a:hover{
+    border-bottom: 2px solid black;
+}
+@media (max-width: 952px){
+    .header_section{
+        font-size: 30px;
+        padding-left: 50px;
+    }
+    .header_section ul li a{
+        font-size: 16px;
+    }
+}
 /* main ka code */
+main{
+    
+  max-width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
 
+}
 .home_section{
     font-weight: 400;
     font-size: 45px;
@@ -69,6 +80,13 @@ hr{
     text-decoration: none;
     color: black;
 }
+.contact_text p{
+    margin-left: 25px;
+}
+.contact_text2{
+    margin-left: 70px;
+    font-size: 20px;
+}
 main{
     margin-bottom: 100px;
 }
@@ -82,10 +100,10 @@ main{
 .footer_section p{
     font-size: 20px;
     font-weight: 300;
-    margin: 10px 0px 0px 30px;
+    margin: 10px 0px 0px 5px;
 }
 .footer_section p a{
     text-decoration: none;
     color: black;
-    margin-left: 100px;
+    margin-left: 50px;
 } 
