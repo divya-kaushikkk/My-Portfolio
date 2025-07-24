@@ -164,7 +164,7 @@ nav a:hover{
     font-size: 18px;
     line-height: 1.8;
     color: #ccc;
-    margin-bottom: 30px;
+    margin-bottom: 5px;
     animation: fadeIn 1s ease 0.4s forwards;
     /* opacity: 0; */
 }
@@ -220,7 +220,7 @@ nav a:hover{
         justify-content: center;
     }
     .hero-text{
-        margin-bottom: 50px;
+        margin-bottom: 0;
     }
     .buttons{
         justify-content: center;
@@ -240,7 +240,7 @@ nav a:hover{
         padding: 100px 20px 50px;
     }
     .hero-text{
-        margin-bottom: 40px;
+        margin-bottom: 0
     }
     .hero-image{
         width: 350px;
