@@ -5,33 +5,62 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Divya's Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    </head>
+</head>
 <body>
-    <header class="header">
-        <nav class="header_section">
-            <ul>
-             <li><a href="#home">Home</a></li>
-             <li><a href="#skills">Skills</a></li>
-             <li><a href="#projects">Projects</a></li>
-             <li><a href="#contact">Contact</a></li>
-            </ul>
+    <header id="header">
+        <div class="logo">Divya</div>
+        <nav>
+            <a href="">Home</a>
+            <a href="">Skills</a>
+            <a href="">Projects</a>
+            <a href="" class="contact-btn">Contact</a>
         </nav>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
     </header>
+    <div class="mobile-nav" id="mobileNav">
+        <a href="#">Home</a>
+        <a href="#about">About Me</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </div>
 
-    <main>
-       <div class="home"> 
-        <h2 class="home_section" id="home">About Me</h2><hr>
-        <P>Hi! I'm Divya, a student at Kurukshetra University, Kurukshetra. And, currently pursuing my Bachelor of Computer Applications (BCA). I'm passionate about backend development and love working on the logic and structure that powers modern web applications.</P>
-        <p>I also enjoy exploring databases—understanding how data is stored, organized, and managed has always fascinated me. From writing SQL queries to understanding how databases support scalable applications, I love diving deep into these concepts.</p>
-        <P>Alongside my studies, I have explored ethical hacking and cybersecurity, and I have hands-on experience with Kali Linux and Parrot OS. These tools have helped me understand the importance of building secure systems from the ground up.
+    <section class="hero">
+        <div class="hero-text" id="about">
+            <h1>Hey, I'm <span>Divya</span></h1>
+            <h2>Web Developer</h2>
+            <p>I'm a a backend-focused full-stack developer passionate about building scalable and secure web applications.  </p>
+        </div>
+        <div class="buttons">
+            <a href="https://github.com/divya-kaushikkk" target="_blank" class="btn">Github</a>
+            <a href="mailto:" class="btn">Email</a>
+        </div>
+        <div class="hero-image-container">
+            <img src="Images/logo/png-d-render-young-woman-laptop-professional-avatar-business-illustration-digital-character-female-entrepreneur-online-worker-384929260.webp" class="hero-image" alt="">
+        </div>
+    </section>
 
-My goal is to become a skilled backend developer, combining my programming knowledge with cybersecurity awareness to create efficient and secure applications.</P>
-        <P>Alongside my studies, I have explored ethical hacking and cybersecurity, and I have hands-on experience with Kali Linux and Parrot OS. These tools have helped me understand the importance of building secure systems from the ground up.
+    <script>
+  const hamburger = document.querySelector('.hamburger');
+  const mobileNav = document.querySelector('.mobile-nav');
 
-My goal is to become a skilled backend developer, combining my programming knowledge with cybersecurity awareness to create efficient and secure applications.</P>
-       </div>
-
-       <div class="skills">
+  hamburger.addEventListener('click', () => {
+    hamburger.classList.toggle('active');
+    mobileNav.classList.toggle('active');
+  });
+  const mobileLinks = document.querySelectorAll('.mobile-nav a');
+  mobileLinks.forEach(link => {
+    link.addEventListener('click', () => {
+      hamburger.classList.remove('active');
+      mobileNav.classList.remove('active');
+    });
+  });
+    </script>
+    <div class="skills" id="skills">
         <h2 class="home_section" id="skills">Skills</h2><hr>
         <h3 class="skills_section">• Web development</h3>
           <p> HTML & CSS - Structuring and styling responsive web pages</p>
@@ -62,9 +91,9 @@ My goal is to become a skilled backend developer, combining my programming knowl
             <p> Express.js & API integration</p>
             <p> Advanced database queries and optimization</p>
 
-        </div>
+    </div>
 
-        <div class="Projects">
+    <div class="Projects" id="projects">
         <h2 class="home_section" id="projects">Projects</h2><hr>
           <h3 class="skills_section">1. Personal Portfolio Webste (In Progress)</h3>
             <p>• Tech Stack: HTML, CSS, JavaScript</p>
@@ -75,17 +104,9 @@ My goal is to become a skilled backend developer, combining my programming knowl
              <p>• Tech Stack: HTML, CSS</p>
              <p>• Description: A frontend clone of the Myntra e-commerce website. Built from scratch to practice real-world layout, styling, and interactivity.</p>
              <p>• Status: Still working on adding responsiveness and JavaScript-based features like search/filter</p>
-        </div>
+    </div>
 
-       <div class="contact">
-         <h2 class="home_section" id="contact">Contact</h2><hr>
-         <p class="contact_text">I'm always open to learning opportunities, collaboration, or just chatting about tech, backend development, or cybersecurity.</p>
-         <p class="contact_text2">• Email : <a href="mailto: "> divyakaushik0117@gmail.com</a></p>
-         <p class="contact">• Github : <a href="https://github.com/divya-kaushikkk" target="_blank"> https://github.com/divya-kaushikkk</a></p>
-       </div>
-    </main>
-  
-    <footer>
+        <footer id="contact">
         <div class="footer_section">
          <p>Thank you for visiting my portfolio!</p>
          <p>Let's connect : </p>
@@ -93,6 +114,6 @@ My goal is to become a skilled backend developer, combining my programming knowl
          <p> <a href="mailto: divyakaushik0117@gmail.com">Email</a></p>
          <p>&copy; 2025 Divya Kaushik.</p>
         </div>
-     </footer>   
+     </footer> 
 </body>
 </html>
