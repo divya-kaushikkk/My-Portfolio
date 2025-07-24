@@ -128,7 +128,7 @@ nav a:hover{
     transform: translateX(-10px);
 }
 .hero{
-    min-height: 100vh;
+    min-height: 50vh;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
