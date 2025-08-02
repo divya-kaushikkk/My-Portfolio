@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    text-decoration: none;
 }
 body{
     min-height: 100vh;
@@ -197,7 +198,7 @@ nav a:hover{
 .buttons a:first-child:hover{
     background: rgba(255, 0, 0, 0.1);
 }
-.hero-image-container{
+/* .hero-image-container{
     position: relative;
     z-index: 2;
     animation: fadeInRight 1s ease;
@@ -213,7 +214,7 @@ nav a:hover{
 .hero-image:hover{
     transform: scale(1.03);
     box-shadow: 0 25px 60px rgba(255,0,0, 0.2);
-}
+} */
 @media (max-width: 992px){
     .hero{
         padding-top: 120px;
